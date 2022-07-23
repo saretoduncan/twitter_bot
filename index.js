@@ -10,7 +10,8 @@ const client = new TwitterApi({
 });
 async function makeTweet() {
   const tweet = await client.v1.tweet(
-    "Hello ,world! I'm twitting from my Node.js app!"
+    "Hello ,world! I'm twitting from my Node.js app! #buildwhatsnext"
   );
+  console.log(tweet)
 }
 makeTweet();
